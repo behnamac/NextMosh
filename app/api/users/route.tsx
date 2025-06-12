@@ -6,3 +6,9 @@ export function GET(request: NextRequest) {
     { id: 2, name: "Sam " },
   ]);
 }
+
+export async function POST(request: NextRequest) {
+  const body = await request.json();
+  // You can add logic to save the user here
+  return NextResponse.json(body);
+}

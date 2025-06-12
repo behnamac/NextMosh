@@ -1,4 +1,4 @@
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 interface Props {
   params: {
@@ -14,3 +14,4 @@ export function GET(request: NextRequest, { params: { id } }: Props) {
     JSON.stringify({ id, name: `User ${id}`, email: "fdfds" })
   );
 }
+

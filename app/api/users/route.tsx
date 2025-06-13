@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 import { schema } from "./schema";
-import { id } from "zod/v4/locales";
 
 export function GET(request: NextRequest) {
   return NextResponse.json([
